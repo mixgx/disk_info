@@ -1,2 +1,2 @@
-# disk_info README
+#README
 README
