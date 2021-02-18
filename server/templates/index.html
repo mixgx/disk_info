@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+{% include 'head.html' %}
+</head>
+
+<body class="py-4">
+
+<main>
+  <div class="container">
+>>>
+    <h1>Welcome! </h1>
+
+	<h2 class="mt-4">Latest data:</h2>
+
+    <div class="row mb-3">
+      <div class="col-4 themed-grid-col"><strong class="d-block text-gray-dark">ID / DISK:</strong></div>
+      <div class="col-4 themed-grid-col"><strong class="d-block text-gray-dark">FREE DISK SPACE:</strong></div>
+      <div class="col-4 themed-grid-col"><strong class="d-block text-gray-dark">TOTAL DISK SPACE:</strong></div>
+    </div>
+
+	{% for post in posts %}
+	{% include 'pc.html' %}
+    {% endfor %}
+	<strong class="d-block text-gray-dark">RESRESH DATA - <a href="/refresh">🔃</a></strong>
+
+	<p> </p>
+	<p> </p>
+
+    <h6 class="border-bottom pb-2 mb-0">Recent updates</h6>
+    <div class="d-flex text-muted pt-3">
+      <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"></rect><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+
+      <p class="pb-3 mb-0 small lh-sm border-bottom">
+        <strong class="d-block text-gray-dark"><a href="/">Computer 1</a></strong>
+        Some representative placeholder content, with some information about this user. Imagine this being some sort of status update, perhaps?
+      </p>
+    </div>
+    <div class="d-flex text-muted pt-3">
+      <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#e83e8c"></rect><text x="50%" y="50%" fill="#e83e8c" dy=".3em">32x32</text></svg>
+
+      <p class="pb-3 mb-0 small lh-sm border-bottom">
+        <strong class="d-block text-gray-dark"><a href="/">Computer 2</a></strong>
+        Some more representative placeholder content, related to this other user. Another status update, perhaps.
+      </p>
+    </div>
+    <div class="d-flex text-muted pt-3">
+      <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6f42c1"></rect><text x="50%" y="50%" fill="#6f42c1" dy=".3em">32x32</text></svg>
+
+      <p class="pb-3 mb-0 small lh-sm border-bottom">
+        <strong class="d-block text-gray-dark"><a href="/">Computer 3</a></strong>
+        This user also gets some representative placeholder content. Maybe they did something interesting, and you really want to highlight this in the recent updates.
+      </p>
+    </div>
+  
+</main>
+
+
+    
+  </body>
+</html>
