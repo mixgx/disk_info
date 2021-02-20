@@ -20,5 +20,5 @@ now you can run "client.py" with "python client.py"
 the end
 now you can run "site.py.py" with "python site.py"
 
-#hints
+#hints:
 If something doesn't work try using "python3" instead of "python" or vice versa
