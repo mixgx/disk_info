@@ -1,11 +1,3 @@
-import os
-
-try:
-    os.system('pip install psutil')
-except:
-    print('failed to install libraries, try linux way...')
-    os.system('pip3 install psutil')
-
 import socket
 import psutil
 
@@ -37,5 +29,5 @@ class Listener:
         self.conn.close()
 
 while True:
-    my_listener = Listener('localhost', 4444)
+    my_listener = Listener('localhost', 4443)
     my_listener.run()

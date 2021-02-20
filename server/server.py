@@ -14,7 +14,7 @@ class Ipc:
         except Exception as e:
             print(e)
 
-    def run(self, diskinfo):
+    def run(self, diskinfo, ipslen):
         try:
             self.s.send(diskinfo.encode())
             free = self.s.recv(1000).decode()
@@ -37,6 +37,7 @@ class Ipc:
             current_datetime = datetime.now()
 
             print(self.con)
+            print(ipslen)
 
             ins = 'INSERT INTO disk VALUES("'+str(ipslen)+'", "'+total+'", "'+free+'", "'+str(current_datetime)+'")'
             #sql_drop(self.con)

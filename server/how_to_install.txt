@@ -1,0 +1,8 @@
+1. Open powershell and go to this dir
+
+2. Run command "./python-3.8.5-amd64.exe" and install python
+
+3. Run command "python install.py" (if it doesn't work use "python3 install.py")
+
+the end
+now you can run "site.py.py" with "python site.py"

@@ -37,8 +37,9 @@ def rtos():
             diskinfo = ipsdisk[ipslen]
         except:
             diskinfo = 'C:'
-        my_ipc.run(diskinfo)
+        my_ipc.run(diskinfo, ipslen)
         ipslen = ipslen - 1
+        print(ipslen)
     posts = sql_table(con, False, False, 'test')
     return render_template("rtos.html")
 
