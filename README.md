@@ -21,4 +21,5 @@ the end
 now you can run "site.py.py" with "python site.py"
 
 #hints:
-If something doesn't work try using "python3" instead of "python" or vice versa
+If something doesn't work try using "python3" instead of "python" or vice versa.............................
+if you are not going to do the installation you can run the compiled exe (not recommended)
