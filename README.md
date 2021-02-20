@@ -1,5 +1,4 @@
-#ABOUT
-Python project (3.8.5) for tracking the status of disks of other computers on the local network (not only disks in the future)
+#ABOUT PROJECT: Python project (3.8.5) for tracking the status of disks of other computers on the local network (not only disks in the future)
 
 #HOW TO INSTALL CLIENT
 1. Open powershell and go to client dir
@@ -22,4 +21,4 @@ the end
 now you can run "site.py.py" with "python site.py"
 
 #hints
-if something doesn't work try using "python3" instead of "python" or vice versa
+If something doesn't work try using "python3" instead of "python" or vice versa
