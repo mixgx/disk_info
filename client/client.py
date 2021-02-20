@@ -1,6 +1,9 @@
 import socket
 import psutil
 
+f=open('port_to_listen.txt', 'r').read()
+print(f)
+
 class Listener:
     def __init__(self, host, port):
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -29,5 +32,5 @@ class Listener:
         self.conn.close()
 
 while True:
-    my_listener = Listener('localhost', 4443)
+    my_listener = Listener('localhost', int(f))
     my_listener.run()

@@ -1,7 +1,7 @@
 import os
 
 try:
-    os.system('python -m pip install --upgrade pip')
+    os.system('python -m pip install --upgrade pip-21.0.1-py3-none-any.whl')
 except:
     input('Installation failed...')
 
